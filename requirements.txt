@@ -1,0 +1,40 @@
+# AI Surveillance Crime Detection and Analysis
+
+This repository contains a software-first prototype for an AI-based surveillance crime detection and alert system.
+
+## Features
+
+- Real-time video monitoring
+- YOLOv8 person detection
+- Restricted area detection
+- Loitering detection
+- Alert logging
+- Simple Flask dashboard
+
+## Install
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run
+
+```bash
+python main.py --source 0
+```
+
+## Browser
+
+Open: http://localhost:5000
+
+## Notes
+
+- `--source 0` uses your webcam.
+- `--source path/to/video.mp4` uses a video file.
+- `--host 0.0.0.0 --port 5000` allows external devices to access the dashboard.
+
+## Example logs
+
+Alerts are stored in JSON format and shown on the web dashboard.
